@@ -5,5 +5,5 @@
 
 # Class hierarchy
 
-!(class_hierarchy.png)
+![](class_hierarchy.png)
 	 
