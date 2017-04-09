@@ -9,9 +9,13 @@ import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
-public abstract class TaskCommand implements Command {
+public abstract class TaskCommand extends Command {
 
 	private static final String PATH_TODO_MD = "todo.md";
+
+	public TaskCommand(String description) {
+		super(description);
+	}
 
 	protected abstract List<Task> processTasks(List<String> args, List<Task> tasks);
 

@@ -4,7 +4,11 @@ import static java.lang.System.out;
 
 import java.util.List;
 
-public class PrintQuoteCommand implements Command {
+public class PrintQuoteCommand extends Command {
+
+	public PrintQuoteCommand() {
+		super("Prints a motivational quote");
+	}
 
 	@Override
 	public void run(List<String> args) {

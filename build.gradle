@@ -4,7 +4,13 @@ apply plugin: 'eclipse'
 repositories {
     jcenter()
 }
-
+jar {
+  manifest {
+    attributes(
+      'Main-Class': 'io.github.karandit.todoapp.TodoApp'
+    )
+  }
+}
 dependencies {
     testCompile 'junit:junit:4.12'
 }

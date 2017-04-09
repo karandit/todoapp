@@ -6,6 +6,10 @@ import java.util.List;
 
 public class RemoveTaskCommand extends TaskCommand {
 
+	public RemoveTaskCommand() {
+		super("Removes a task");
+	}
+
 	@Override
 	protected List<Task> processTasks(List<String> args, List<Task> tasks) {
 		if (args.isEmpty()) {

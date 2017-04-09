@@ -6,6 +6,10 @@ import java.util.List;
 
 public class AddTaskCommand extends TaskCommand {
 
+	public AddTaskCommand() {
+		super("Adds a task");
+	}
+
 	@Override
 	protected List<Task> processTasks(List<String> args, List<Task> tasks) {
 		if (args.isEmpty()) {

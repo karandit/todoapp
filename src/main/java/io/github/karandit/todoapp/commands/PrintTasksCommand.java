@@ -6,6 +6,10 @@ import java.util.List;
 
 public class PrintTasksCommand extends TaskCommand {
 
+	public PrintTasksCommand() {
+		super("Prints all todo tasks");
+	}
+
 	@Override
 	protected List<Task> processTasks(List<String> args, List<Task> tasks) {
 		if (tasks.isEmpty()) {
